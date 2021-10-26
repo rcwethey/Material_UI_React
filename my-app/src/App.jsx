@@ -36,10 +36,12 @@ function App(props)
         event.preventDefault();
     };
 
+const myGridData = GridGorm();
+
     return (
 
         <div className="App">
-            <Container
+            <Containmy
 
                 sx={{
                     width: "80%",
@@ -50,7 +52,7 @@ function App(props)
                 <Box sx={{ flexGrow: 1 }}>
                     <AppBar position="static">
                         <Toolbar>
-                            <IconButton color="inherit" onClick={() => alert(props.login)} >
+                            <IconButton color="inherit" onClick={() => alert(myGridData.login)} >
                                 <PrintIcon>
 
                                 </PrintIcon>
